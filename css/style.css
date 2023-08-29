@@ -1,0 +1,60 @@
+
+/* ============================= External Font Added =================================*/
+
+/* ============================= initialization ======================================*/
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+span{}
+p{}
+
+/* =============================== Root create =======================================*/
+:root{
+    --font: #1A1A1A;
+}
+
+/* ================================ Structure Code Create =============================== */
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,minmax(auto,1fr));
+    grid-template-rows: repeat(5,1fr);
+    text-align: center;
+}
+header,footer{
+    grid-column: 1/-1;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.menuItem{
+    display: flex;
+    flex-direction: column;
+}
+header .menuItem a{
+    text-decoration: none;
+}
+.contentTitle,.RecentContent,.hotItem,.allBlogPost,.pagination{
+    grid-column: 1/-1;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+footer a{
+    text-decoration: none;
+    
+}
+
+
+
